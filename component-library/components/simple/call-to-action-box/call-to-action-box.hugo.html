@@ -1,0 +1,9 @@
+{{ $c := "c-simple-call-to-action-box"}}
+
+<div class="{{ $c }}">
+    <img src="https://cdn1.papercut.com/web/cloudcannon/papercut_green_stars.svg" alt="green stars">
+    <h3>{{ .heading }}</h3>
+    <p>{{- .body_text | markdownify -}} </p>
+    {{ partial "bookshop" (slice "generic/link" .link) }}
+</div>
+

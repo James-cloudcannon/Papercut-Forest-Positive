@@ -1,0 +1,27 @@
+.c-background-video {
+    z-index: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    &__video-container{
+        z-index: 0;
+        position: absolute;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+    }
+}
+
+.w-bottom-bar-left, .w-bottom-bar, .w-bottom-bar-middle, .w-bottom-bar-right, .w-captions{
+    display: none;
+    opacity: 0;
+}

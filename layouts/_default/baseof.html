@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{- partial "head/head.html" . -}}
+    <body>
+            <header>
+                {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
+            </header>
+            <main id="documentBody">
+                {{/*  {{- partial "generic/breadcrumbs.html" . -}}  */}}
+
+                <!-- Render any additional page content below the page's content blocks -->
+                {{ block "main" . }}{{ end }}
+            </main>
+            {{/*  {{ partial "footer/footer.html" . -}}  */}}
+            {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
+    </body>
+</html>

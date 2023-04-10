@@ -1,0 +1,31 @@
+{
+  "name": "papercut-grows",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "run-p hugo-server bookshop",
+    "hugo-server-watch": "hugo server -D --watch",
+    "hugo-server": "hugo server -D -p 1233",
+    "init": "npx @bookshop/init --component",
+    "build": "hugo --source ./ --destination public --baseURL /",
+    "bookshop-update": "npx @bookshop/up@latest",
+    "fix-hugo": "hugo mod clean",
+    "bookshop": "npx @bookshop/browser",
+    "new": "npx @bookshop/init --component"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bookshop/browser": "3.4.1",
+    "@bookshop/generate": "3.4.1",
+    "@bookshop/hugo-engine": "3.4.1",
+    "@alpinejs/intersect": "^3.11.1",
+    "alpinejs": "^3.9.5",
+    "body-scroll-lock": "^3.1.5",
+    "container-query-polyfill": "github:lilles/container-query-polyfill#skip-at-rules-20220402",
+    "front-matter": "^4.0.2",
+    "npm-run-all": "^4.1.5"
+  }
+}

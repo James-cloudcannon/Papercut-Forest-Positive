@@ -1,0 +1,12 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'PaperCut Grows'
+
+[module]
+replacements = "components.local -> ../component-library"
+
+[[module.imports]]
+path = 'components.local'
+
+[[module.imports]]
+path = 'github.com/cloudcannon/bookshop/hugo/v3'

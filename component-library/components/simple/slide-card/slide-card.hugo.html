@@ -1,0 +1,19 @@
+{{ $c := "c-slide-card" }}
+
+<div class="{{ $c }}">
+    <div class="{{$c}}__inner-wrapper">
+        <div class="{{ $c }}__image-wrapper">
+            {{ if .primary_image }}
+                <img src="{{ .primary_image }}" alt="" class="{{ $c }}__primary-image">
+            {{ end }}
+            {{ if .logo }}
+                <img src="{{ .logo }}" alt="" class="{{ $c }}__logo">
+            {{ end }}
+        </div>
+        <div class="{{ $c }}__body-content">
+            <h5>{{ .title }}</h5>
+            <p>{{ .body_text }}</p>
+            <a href="{{ .url }}">Visit site</a>
+        </div>
+    </div>
+</div>

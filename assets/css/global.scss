@@ -1,0 +1,64 @@
+* {
+	-moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-size: var(--text-base);
+    -webkit-overflow-scrolling: touch;
+	font-family: var(--font-sans-body);
+	color: var(--text-zinc);
+    line-height: var(--leading-base);
+	overflow-x: hidden;
+	
+}
+
+:where(p) {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.page-wrapper {
+
+}
+
+.components {
+
+}
+
+.component {
+	background-color: var(--bg-colour-main);
+
+	&--grey {
+		background-color: var(--bg-colour-var-1);
+	}
+
+	&--green {
+		background-color: var(--bg-colour-var-2);
+	}
+
+	&--dark-grey {
+		background-color: var(--bg-colour-var-3);
+	}
+}
+
+.component--sticky{
+	position: sticky;
+	top: 112px;
+	z-index: 9;
+}
+
+
+[x-cloak] { display: none !important; }

@@ -1,0 +1,37 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Navigation-form"
+  description:
+  icon: contact_mail
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  text: "Hello World!"
+  email_input:
+    type: email
+    placeholder: ""
+    required: true
+  checkbox_input:
+    type: checkbox
+    label: ""
+  privacy_policy: ""
+  button: bookshop:generic/link
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  text: "Hello World!"
+  email_input:
+    type: email
+    placeholder: "Email*"
+    required: true
+  checkbox_input:
+    type: checkbox
+    label: "Yes, subscribe me to PaperCut news, offers, product updates, newsletters and events. *"
+  privacy_policy: "By filling out and submitting this form, you agree that you have read our <a href='/privacy-policy'>Privacy Policy</a> and agree to PaperCut handling your data in accordance with its terms."
+  button: bookshop:generic/link
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

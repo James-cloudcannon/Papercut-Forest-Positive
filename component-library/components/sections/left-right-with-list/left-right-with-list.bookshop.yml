@@ -1,0 +1,53 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Left right with list"
+  description: Configurable heading, content with list and image, the main content can be positioned to the right or left as required.
+  icon: vertical_split
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  image_path: 
+  heading: bookshop:generic/heading
+  body_text:
+  links:
+    - content_html:  
+  background_color: 
+  list_alignment:
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  image_path: https://picsum.photos/437/437
+  heading: bookshop:generic/heading
+  body_text: >-
+    Forest Positive is a global movement, and a targeted extension of sustainability. We’re just doing our bit to bring it to printing. 
+
+
+    The Forest Positive movement is bigger than us. Want to learn more about it? Look at these other initiatives in the space:
+  links:
+    - content_html: "WWF - Responsible pulp and paper policies and targets with paper manufacturers - also check out their post on Creating a Forest Positive Future"
+    - content_html: "IKEA - Forest Positive wood sourcing for the furniture industry "
+    - content_html: "United Nations - The Global Forest Goals Report 2021 outlines the importance of the worlds forests in achieving a sustainable tomorrow"
+  background_color: "#F1F3F5"
+  list_alignment: "right"
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  background_color:
+    type: select
+    options:
+      values:
+        - "#F1F3F5"
+        - "#F8F9FA"
+        - "#FFFFFF"
+        - "#E7F6E9" 
+  list_alignment:
+    type: select
+    options:
+      values:
+        - "left"
+        - "right"
+  body_text:
+    type: markdown

@@ -1,0 +1,38 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+  label: "Generic Link"
+  description: Link with different style options
+  icon: link
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content: 
+  url:
+  open_in_new_tab: false
+  style: primary
+  download_link: false
+
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content: "Submit"
+  url: "#"
+  open_in_new_tab: true
+  style: primary
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  download_link: 
+    hidden: true
+    comment: Link provided needs to be a downloadable file
+    type: checkbox
+  style:
+    type: select
+    options:
+      values:
+        - primary
+        - secondary
+        - animated-link
+        - plain-link

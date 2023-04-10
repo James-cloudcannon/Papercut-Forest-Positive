@@ -1,0 +1,12 @@
+{{ $c := "c-footer-cta" }}
+<section class="{{ $c }}">
+    <div class="{{ $c }}__content">
+        <h2 class="{{ $c }}__content__heading">{{ .heading }}</h2>
+        <p class="{{ $c }}__content__description">{{ .description }}</p>
+    </div>
+    <div class="{{ $c }}__links">
+        {{ range .links }}
+            <a class="{{ $c }}__links__link {{ $c }}__links__link--{{ .color }}" href="{{ .url }}">{{ .content }}</a>
+        {{ end }}
+    </div>
+</section>

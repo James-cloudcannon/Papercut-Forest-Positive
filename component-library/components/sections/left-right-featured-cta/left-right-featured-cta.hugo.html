@@ -1,0 +1,35 @@
+{{$c := "c-left-right-featured-cta"}}
+
+<div class="{{ $c }}">
+  {{ if .background_video }}
+  {{ partial "bookshop" (slice "simple/background-video" .background_video) }}
+{{ end }}
+
+  {{ if eq .cta_alignment "right" }}
+      <div class="{{ $c }}__left {{ $c }}__left--heading">
+          {{ if .logo_image_path }}
+              <img src="{{ .logo_image_path }}" alt="{{ .logo_image_alt_tag }}">
+              {{/*  <h1 style="position: absolute; opacity: 0">{{ .heading }}</h1>  */}}
+          {{ else }}
+              <h1>{{ .heading }}</h1>
+          {{ end }}
+      </div>
+
+      <div class="{{ $c }}__right {{ $c }}__right--cta">
+          {{ partial "bookshop" (slice "simple/call-to-action-box" .call_to_action) }}
+      </div>
+  {{ else }}
+  <div class="{{ $c }}__left {{ $c }}__left--cta">
+      {{ partial "bookshop" (slice "simple/call-to-action-box" .call_to_action) }}
+  </div>
+  <div class="{{ $c }}__right {{ $c }}__right--heading">
+      {{ if .logo_image_path }}
+      <img src="{{ .logo_image_path }}" alt="{{ .logo_image_alt_tag }}">
+      {{/*  <h1 style="position: absolute; opacity: 0">{{ .heading }}</h1>  */}}
+      {{ else }}
+          <h1>{{ .heading }}</h1>
+      {{ end }}
+  </div>
+{{ end }}
+</div>
+

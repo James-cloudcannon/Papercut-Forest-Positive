@@ -1,0 +1,32 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "left-right-quote-block"
+  description: Configurable title, description, background color, and quote + author, the main content can be positioned to the right or left as required.
+  icon: format_quote
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  quote: 
+  author: 
+  title:
+  heading: bookshop:generic/heading
+  body_text:
+  background_color:  
+  quote_alignment: 
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  quote: "“What we are doing to the forests of the world is but a mirror reflection of what we are doing to ourselves and to one another.” "
+  author: "Chris Maser"
+  title: "what is forest positive printing"
+  heading: bookshop:generic/heading
+  body_text: >-
+    **Forest Positive printing** is extending the Forest Positive evolution into the print space. It allows organisations to actively contribute to more trees being planted than those pulped into printing paper. Forest Positive printing moves beyond reducing waste and transforms essential business printing from a negative environmental footprint to a positive force for reforestation and ecological renewal.
+  background_color: "#F1F3F5"
+  quote_alignment: "right"
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

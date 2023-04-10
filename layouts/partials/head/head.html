@@ -1,0 +1,32 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{- $options := dict "targetPath" "js/build.js" -}}
+    {{- $jsBundle := resources.Get "js/index.js" | js.Build $options -}}
+
+    <script defer src='{{ $jsBundle.RelPermalink }}' ></script>
+    <!-- The bookshop_scss partial returns a slice of all SCSS resources from your Bookshop -->
+    {{ $bookshop_scss_files := partial "bookshop_scss" . }}
+    <!-- resources.Concat converts all of the above SCSS resources into one logical CSS file -->
+    {{ $bookscss := $bookshop_scss_files | resources.Concat "css/bookshop.css" |
+    resources.ToCSS }}
+    <!-- fetch all *.css files in the ./assets/css/ folder and combine them -->
+    {{ $css := resources.Match "css/*.css" | resources.Concat "glob1.css" }}
+    <!-- fetch all *.scss files in the ./assets/css/ folder and combine and convert to css -->
+    {{ $scss := resources.Match "css/*.scss" | resources.Concat "glob2.css" | resources.ToCSS }}
+    <!-- combine all boofkshop, css and scss files into one resources -->
+    {{ $css := slice $css $scss $bookscss | resources.Concat "main.css"  }}
+   
+
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:400,600,700|Source+Sans+Pro:400,600,700|Source+Code+Pro">
+    {{ if not (hugo.IsProduction) }}
+        <script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=eolkgx53ezz41djel677sg" async="true"></script>
+    {{ end }}
+    <title>{{ print .Page.Title " | " .Site.Title }}</title>
+
+
+
+   
+</head>

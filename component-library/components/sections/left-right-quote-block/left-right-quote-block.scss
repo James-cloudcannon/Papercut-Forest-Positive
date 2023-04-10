@@ -1,0 +1,89 @@
+.c-left-right-quote-block {
+    grid-template-columns: var(--twelve-column-grid);
+    display: grid;
+    padding: 96px 64px;
+    
+ 
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        // max-width: 564px;
+        &--right{
+
+        
+            grid-column: 2 / 8;        
+           
+
+           
+        }
+        &--left{
+            grid-column: 9 / 14;        
+
+          
+
+        }
+
+        &--title {
+            color: var(--text-green-700);
+            font-family: var(--font-sans-body);
+            font-weight: var(--font-semibold);
+            font-size: var(--text-base);
+            line-height: var(--leading-base);
+            text-decoration: none;
+            // letter-spacing: 2px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--text-stone);
+            font-family: var(--font-sans-body);
+            font-weight: var(--font-normal);
+ 
+            
+        }
+    }
+
+    &__quote{
+        &--right{
+            grid-column: 9 / 14;
+            // max-width: 466px;
+           
+        }
+
+        &--left{
+            grid-column: 2 / 8;
+            // max-width: 466px;
+        }
+        &__quoteBody{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            border-top: 3px solid #A1DAA6;
+            border-bottom: 3px solid #A1DAA6;
+    
+            h3{
+                font-weight: 700;
+                font-size: 28px;
+                font-family: Barlow,Verdana,sans-serif;
+                line-height: 35px;
+                margin: 0;
+                
+            }
+            p{
+                font-style: italic;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: var(--text-stone);
+                font-family: var(--font-sans-body);
+                
+
+            }
+        }
+    }
+}

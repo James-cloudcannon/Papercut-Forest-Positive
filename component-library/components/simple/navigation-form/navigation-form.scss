@@ -1,0 +1,61 @@
+.c-subscribe-form {
+    font-family: var(--font-sans-body);
+    font-size: var(--text-base);
+    line-height: var(--leading-base);
+    background-color: var(--bg-zinc);
+    color: var(--text-white);
+    width: 100%;
+    
+    &__heading {
+        font-weight: var(--font-semibold);
+        margin-bottom: 16px;
+    }
+    
+    &__form-wrapper {
+        font-size: 13px;
+        line-height: 19.5px;
+        display: flex;
+        flex-direction: column;
+        a {
+            color: var(--text-white);
+            text-decoration-color: var(--text-white);
+        }
+
+        
+
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        min-width: 100%;
+
+        &__input-group{
+            min-width: 100%;
+            display: flex;
+            gap: .75rem;
+            
+
+            input[type="email"]{
+                min-width: 100%;
+                font-weight: var(--font-semibold);
+                padding: .75rem;
+
+            }
+            // make checkbox larger
+            input[type="checkbox"]{
+                width: 2rem;
+                height: 2rem;
+                margin: 0;
+
+            }
+        }
+
+        a {
+            min-width: 100%;
+            justify-content: center;
+        }
+    }
+}

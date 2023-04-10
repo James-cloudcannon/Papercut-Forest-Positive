@@ -1,0 +1,31 @@
+{{$c := "c-left-right-quote-block"}}
+
+
+<div class="{{ $c }}" style = "background-color: {{ .background_color }};">
+    {{ if eq .quote_alignment "right"}}
+        <div class="{{ $c }}__body--right {{ $c }}__body">
+            <h4 class="{{ $c }}__body--title">{{ .title }}</h4>
+            {{ if .heading }}{{ partial "bookshop" (slice "generic/heading" .heading ) }}{{ end }}
+            <p>{{- .body_text | markdownify -}}</p>
+        </div>
+        <div class="{{ $c }}__quote--right {{ $c }}__quote">
+            <div class="{{ $c }}__quote__quoteBody">
+                <h3>{{ .quote }}</h3>
+                <p>- {{ .author }}</p>
+            </div>
+        </div>
+    {{ else }}
+    <div class="{{ $c }}__quote--left {{ $c }}__quote">
+        <div class="{{ $c }}__quote__quoteBody">
+            <h3>{{ .quote }}</h3>
+            <p>- {{ .author }}</p>
+        </div>
+    </div>
+    <div class="{{ $c }}__body--left {{ $c }}__body">
+        <h4 class="{{ $c }}__body--title">{{ .title }}</h4>
+        {{ if .heading }}{{ partial "bookshop" (slice "generic/heading" .heading ) }}{{ end }}
+        <p>{{- .body_text | markdownify -}}</p>
+    </div>
+    {{ end }}
+
+</div>

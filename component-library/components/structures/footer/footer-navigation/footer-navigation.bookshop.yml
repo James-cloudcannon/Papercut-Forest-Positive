@@ -1,0 +1,145 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+  label: Footer Navigation
+  description: Navigation links for the site footer
+  icon: add_link
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  text: "Hello World"
+  sections:
+    heading: 
+    links:
+      - name:
+        url:
+        open_in_new_tab:
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  sections:
+  - heading: About
+    links:
+      - name: About us
+        url: /about/
+        open_in_new_tab: false
+      - name: Careers
+        url: /about/life-at-papercut
+        open_in_new_tab: false
+      - name: Meet the team
+        url: /about/team
+        open_in_new_tab: false
+      - name: Testimonials
+        url: /testimonials/
+        open_in_new_tab: false
+      - name: Customer stories
+        url: /customer-stories/
+        open_in_new_tab: false
+      - name: Blog
+        url: /blog/
+        open_in_new_tab: false
+  - heading: Products
+    links:
+      - name: Product overview
+        url: /products/
+        open_in_new_tab: false
+      - name: PaperCut NG
+        url: /products/ng/
+        open_in_new_tab: false
+      - name: PaperCut MF
+        url: /products/mf/
+        open_in_new_tab: false
+      - name: PaperCut Pocket
+        url: /products/papercut-pocket/
+        open_in_new_tab: false
+      - name: PaperCut Hive
+        url: /products/papercut-hive/
+        open_in_new_tab: false
+      - name: Free Tools
+        url: /products/free-software
+        open_in_new_tab: false
+      - name: In the Percolator
+        url: /products/percolator
+        open_in_new_tab: false
+  - heading: Industry
+    links:
+      - name: Education overview
+        url: /industry/education/
+        open_in_new_tab: false
+      - name: High school/K-12
+        url: /industry/education/k-12/
+        open_in_new_tab: false
+      - name: Higher education
+        url: /industry/education/higher-education/
+        open_in_new_tab: false
+      - name: Legal
+        url: /industry/legal/
+        open_in_new_tab: false
+      - name: Large enterprise
+        url: /industry/large-enterprise/
+        open_in_new_tab: false
+      - name: Healthcare
+        url: /industry/healthcare/
+        open_in_new_tab: false
+      - name: Local government
+        url: /industry/local-government/
+        open_in_new_tab: false
+      - name: SMB
+        url: /industry/smb/
+        open_in_new_tab: false
+  - heading: Discover
+    links:
+      - name: Discover overview
+        url: /discover/
+        open_in_new_tab: false
+      - name: Easy printing
+        url: /discover/easy-printing/
+        open_in_new_tab: false
+      - name: Print security
+        url: /discover/print-security/
+        open_in_new_tab: false
+      - name: Waste control
+        url: /discover/waste-control/
+        open_in_new_tab: false
+      - name: Scan
+        url: /discover/easy-scanning-and-capture/
+        open_in_new_tab: false
+      - name: 3D printing
+        url: /discover/guided-3d-printing/
+        open_in_new_tab: false
+      - name: Print rooms
+        url: /discover/print-room-workflows/
+        open_in_new_tab: false
+      - name: Integrations
+        url: /discover/integrations-and-customizations/
+        open_in_new_tab: false
+      - name: Best practices
+        url: /discover/best-practices/
+        open_in_new_tab: false
+      - name: Tour
+        url: /discover/tour/
+        open_in_new_tab: false
+  - heading: Support
+    links:
+      - name: Contact us
+        url: /contact/
+        open_in_new_tab: false
+      - name: Knowledge Base
+        url: /kb/
+        open_in_new_tab: false
+      - name: User Manual
+        url: /support/resources/manuals/ng-mf/
+        open_in_new_tab: false
+  - heading: Partners
+    links:
+      - name: Become a Reseller
+        url: /resellers/
+        open_in_new_tab: false
+      - name: Reseller Login
+        url: /login/
+        open_in_new_tab: false
+
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

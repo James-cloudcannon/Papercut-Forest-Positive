@@ -1,0 +1,39 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Centered-block"
+  description: "A centered block with a background image and text, ability to change title, description, background color and image."
+  icon: stars
+  tags: 
+    - Content
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  heading: ""
+  description: ""
+  background_color: ""
+  image:
+    path: ""
+    alt: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  heading: "What is Forest Positive"
+  description: "What is Forest Positive printing? An evolution of the print space, putting but back more trees than get pulped into printer paper. Doing what’s right for the environment."
+  background_color: "#F8F9FA"
+  image:
+    path: "https://picsum.photos/571/138"
+    alt: "Forest Positive"
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  content:
+    type: html
+  background_color:
+    type: select
+    options:
+      values:
+        - "#F8F9FA"
+        - "#F1F3F5"
+     

@@ -1,0 +1,48 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Left-right-featured-cta"
+  description: Comprises of either a large logo (with a hidden H1) or shown H1 without a logo, a featured CTA and a background video, the main content can be positioned to the right or left as required.
+  icon: video_library
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  heading: ""
+  logo_image_path: 
+  logo_image_alt_tag: 
+  cta_alignment: "right"
+  call_to_action: bookshop:simple/call-to-action-box
+  background_video: bookshop:simple/background-video
+  background_image_path:
+
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  heading: "PaperCut Grows"
+  call_to_action:
+    heading: "PaperCut Grows - our program for Forest Positive printing"
+    body_text: >-
+       PaperCut Grows is our in-product tool to deliver Forest Positive printing, available as an affordable and easy add-on with our flagship solutions PaperCut MF and PaperCut Hive. In partnership with certified non-profit reforestation projects, this sustainability program converts your documents printed into trees planted. 
+       
+       
+       lYou hand-pick which global reforestation project plants your trees, then monitor and display your printing and tree planting volumes via a live dashboard. You’ll also be equipped with an in-product Marketing Toolkit of website components, and social media and copy templates to help tell your business’s sustainability story.
+    link:
+      content: "Learn more about papercut grows"
+      url: "#"
+  logo_image_path: "https://picsum.photos/270/81"
+  logo_image_alt_tag: "PaperCut Grows Logo"
+
+
+
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  cta_alignment:
+    type: select
+    options:
+      values:
+        - "left"
+        - "right"
+

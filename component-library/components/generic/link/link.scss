@@ -1,0 +1,98 @@
+.c-generic-link {
+    background-color: var(--bg-green);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 21px;
+    font-family: var(--font-sans-body);
+    display: flex;
+    width: max-content;
+    align-items: center;
+    max-width: 100%;
+    padding: 12px 24px;
+    transition: background-color .25s;
+    &:hover{
+        background-color: #006316;
+    }
+
+    &--secondary {
+        font-weight: var(--font-semibold);
+        color: #19892b;
+        background-color: transparent;
+        border: 2px solid #19892b; 
+        &:hover {
+            background-color: transparent;
+            color: #006316;
+            border: 2px solid #006316; 
+
+        }
+    }
+
+    &--plain-link {
+        font-weight: var(--font-normal);
+        color: var(--text-blue);
+        background-color: unset;
+        text-decoration: underline;
+        text-decoration-color: var(--text-blue);
+        text-transform: none;
+        padding: 0px;
+        &:hover {
+            color: #163d91;
+            text-decoration-color: #163d91;
+            background-color: unset;
+        }
+    }
+
+    &--animated-link {
+        padding: 0px;
+        padding-right: 12px;
+        font-weight: var(--font-normal);
+        text-decoration: none;
+        color: var(--text-blue);
+        position: relative;
+        background-color: unset;
+        text-transform: none;
+        &:hover {
+            background-color: unset;
+        }
+        
+        // arrow animation
+        &::after {
+           transition: padding-left .25s;
+           transition: padding-left .25s, padding-right .25s;
+           content: "\203A";
+           font-size: 20px;
+           display: inline;
+           position: absolute;
+           bottom: 2px;
+           right: 0px;
+           padding-left: 3px;
+           padding-right: 2px;
+        }
+        
+        &:hover:after {
+           padding-left: 5px;
+           padding-right: 0px;
+        }
+
+        // Underline animation
+        &::before {
+           width: 0%;
+           background: #2b5e8f;
+           transition: width .25s;
+           position: absolute;
+           content: "";
+           height: 1px;
+           bottom: 0px;
+        }
+        &:hover:before {
+           width: 100%;
+        }
+    }
+
+}

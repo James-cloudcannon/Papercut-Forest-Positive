@@ -1,0 +1,38 @@
+<div x-data="{ open: true }">
+    <template x-if="document.querySelector('.js-breadcrumbs') ? true : false">
+      <template x-teleport=".js-breadcrumbs">
+        {{ $c := "c-breadcrumbs" }}
+        <div class="{{ $c -}}__links" x-show="open">
+          <ul class="{{ $c -}}__links__list" id="breadcrumbs">
+            <li class="{{ $c -}}__links__list__item">
+              <a href="/" reseed-ignore>Home</a>
+            </li>
+  
+            {{/*  {{ $urlArray := split .RelPermalink "/"}} {{ $url := ""}} {{ if
+            (os.Getenv "RESEED_BASEURL") }} {{ $reseed_url := split (os.Getenv
+            "RESEED_BASEURL") "/"}} {{- range $index, $element := $reseed_url -}}
+            {{ $url = print $url "/" . }}  */}}
+            <li class="{{ $c -}}__links__list__separator">›</li>
+            <li class="{{ $c -}}__links__list__item">
+              {{/*  <a href="{{ $url }}" reseed-ignore>{{ . | humanize | title}}</a>  */}}
+            </li>
+            {{/*  {{- end -}} {{ end }} {{- range $index, $element := $urlArray -}} {{
+            if ne $index 0 }} {{ if ne $index (sub (len $urlArray) 1) }} {{ $url =
+            print $url "/" . }}  */}}
+            <li class="{{ $c -}}__links__list__separator">›</li>
+            <li class="{{ $c -}}__links__list__item">
+              {{/*  {{ $capitalisedWord := . | humanize | lower }} {{ $capitalisedWord
+              := replace $capitalisedWord "mf" "MF"}} {{ $capitalisedWord :=
+              replace $capitalisedWord "ng" "NG"}} {{ $capitalisedWord := replace
+              $capitalisedWord "papercut" "PaperCut"}}
+              <a href="{{ $url }}" reseed-ignore
+                >{{ $capitalisedWord | title }}</a
+              >  */}}
+            </li>
+            {{/*  {{ end }} {{ end }} {{- end -}}  */}}
+          </ul>
+        </div>
+      </template>
+    </template>
+  </div>
+  

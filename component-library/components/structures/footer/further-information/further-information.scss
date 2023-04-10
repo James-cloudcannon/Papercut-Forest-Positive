@@ -1,0 +1,91 @@
+.c-further-information {
+    font-family: var(--font-sans-body);
+    background-color: #3b3b3d;
+    display: grid;
+    gap: 24px;
+    &__left {
+        grid-row: 1;
+        display: grid;
+        gap: 24px;
+        &__copyright {
+            color: var(--text-white);
+            font-size: var(--text-xs);
+            line-height: 15px;
+            font-weight: var(--font-normal);
+            display: grid;
+            gap: 16px;
+        }
+    }
+    &__right {
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        &__socials {
+            width: 100%;
+            display: grid;
+            justify-content: flex-end;
+            ul {
+                margin: 0;
+                margin-right: 24px;
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 24px;
+                list-style-type: none;
+                padding: 0;
+            }
+            a {
+                padding: 4px;
+                text-decoration: none;
+            }
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+            path {
+                fill: var(--text-white);
+            }
+        }
+        &__links {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 24px;
+            line-height: var(--leading-base);
+            &__link {
+                color: var(--text-white);
+                text-decoration: none;
+                font-size: var(--text-base);
+                cursor: pointer;
+                &__image {
+                    vertical-align: middle;
+                    padding-right: 12px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1022px) {
+        &__left {
+            grid-row: 2;
+            justify-items: center;
+            text-align: center;
+        }
+        &__right {
+            &__socials {
+                justify-content: center;
+            }
+            &__links {
+                display: inline;
+                text-align: center;
+                &__link {
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1023px) {
+        grid-template-columns: calc(33.32333% - 15.9736px) 1fr;
+    }
+}

@@ -1,0 +1,50 @@
+.c-footer-navigation {
+    font-family: var(--font-sans-body);
+    font-size: var(--text-base);
+    line-height: var(--leading-base);
+    background-color: var(--text-zinc);
+    color: var(--text-white);
+    
+    &__main {
+        display: grid;
+        grid-template-columns: calc(16.65667% - 19.9736px) 1fr 1fr 1fr 1fr;
+        gap: 24px;
+        list-style: none;
+        &__section {
+            width: 100%;
+            
+
+           
+            &__group {
+                margin-bottom: 24px;
+                li {
+                    font-weight: var(--font-semibold);
+                    margin-bottom: 4px;
+                    height: 24px;
+                    list-style: none;
+                }
+                &__subgroup {
+                    padding: 0;
+                    li {
+                        font-size: var(--text-sm);
+                        line-height: var(--leading-sm);
+                        font-weight: var(--font-normal);
+                        height: 21px;
+                    
+                        a {
+                            color: var(--text-white);
+                            text-decoration: none;
+
+                            sup {
+                                font-size: 8.4px;
+                                line-height: 10px;
+                                position: relative;
+                                left: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

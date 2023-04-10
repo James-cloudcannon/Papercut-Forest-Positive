@@ -1,0 +1,29 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+    - post_blocks
+  label: "Call to action box"
+  description: Heading, description and button call to action
+  icon: call_to_action
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  heading:
+  body_text:
+  link: bookshop:generic/link
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  heading: "PaperCut Grows - our program for Forest Positive printing"
+  body_text: "PaperCut Grows is our in-product tool to deliver Forest Positive printing, available as an affordable and easy add-on with our flagship solutions PaperCut MF and PaperCut Hive.  In partnership with certified non-profit reforestation projects, this sustainability program converts your documents printed into trees planted. You hand-pick which global reforestation project plants your trees, then monitor and display your printing and tree planting volumes via a live dashboard. You’ll also be equipped with an in-product Marketing Toolkit of website components, and social media and copy templates to help tell your business’s sustainability story."
+  link:
+    content: "Learn more about papercut grows"
+    url: "#"
+
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  body_text:
+      type: markdown
+    

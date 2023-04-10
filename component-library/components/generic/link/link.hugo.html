@@ -1,0 +1,16 @@
+{{ $c := "c-generic-link" }}
+{{ if .url }}
+<a class="{{ $c }} {{ $c }}--{{ .style }}" reseed-ignore href="{{ .url }}"
+    {{ if .open_in_new_tab }}
+        target="_blank"
+        rel="noopener"
+    {{ end }}
+    {{ if .download_link }}
+        download
+    {{ end }}
+>
+    {{ .content }}
+</a>
+{{ else }}
+    <button class="{{ $c }} {{ $c }}--{{ .style }}">{{ .content }}</button>
+{{ end }}

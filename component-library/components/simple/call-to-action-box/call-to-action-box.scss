@@ -1,0 +1,42 @@
+.c-simple-call-to-action-box {
+    box-shadow: 0px 12px 20px rgba(27, 27, 29, 0.15);
+    border-radius: 8px;
+    padding: 50px 30px;
+    background: var(--bg-white);
+    position: relative;
+
+    //TODO: Remove this once text is formatted
+    min-height: 500px;
+    height: max-content;
+    img{
+        position: absolute;
+        top: -15px;
+        right: -25px;
+    }
+    h3{
+        color: #3B3B3D;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 35px;
+        // TODO: Add font-family variable
+        font-family: Barlow,Verdana,sans-serif;
+        margin-top: 0;
+        margin-bottom: 32px;
+        
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #3B3B3D;
+        margin-bottom: 32px;
+        // TODO: Add font-family variable
+        font-family: Barlow,Verdana,sans-serif;
+       
+        
+    }
+    .c-generic-link{
+        position: relative;
+    }
+}

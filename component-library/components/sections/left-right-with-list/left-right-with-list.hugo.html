@@ -1,0 +1,28 @@
+{{ $c := "c-sections-left-right-list" }}
+<div class="{{ $c }}" style="background-color: {{ .background_color }};">
+    <div class='{{ $c }}__body-container 
+    {{ if eq .list_alignment "right" }} 
+        {{ $c }}__body-container--right
+    {{ else }} 
+        {{ $c }}__body-container--left
+    {{ end }}'
+    >
+        {{ if .heading }}{{ partial "bookshop" (slice "generic/heading" .heading ) }}{{ end }}
+        <p>{{- .body_text | markdownify -}}
+        {{ if .links }}
+            <ul>
+            {{ range  .links}}
+                <li>{{ .content_html | safeHTML }}</li>
+            {{ end }}
+            </ul>
+        {{ end }}
+    </div>
+    <div class='{{ $c }}__image-container
+    {{ if eq .list_alignment "right" }} 
+    {{ $c }}__image-container--right
+    {{ else }} 
+    {{ $c }}__image-container--left
+    {{ end }}'>
+        <img src="{{ .image_path }}" alt="">
+    </div>
+</div>

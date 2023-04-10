@@ -1,0 +1,7 @@
+.c-svg-icon-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    --svg-gap: 0px;
+    gap: var(--svg-gap);
+}

@@ -1,0 +1,40 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Footer-CTA"
+  description: Call to action to engage the user in the next step of their journey
+  icon: link
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  heading: ""
+  description: ""
+ 
+  links:
+    - content: ""
+      url: ""
+      color: green
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+    heading: Ready to get started?
+    description: Compare our products or dive a little deeper into product solutions.
+    links:
+      - content: compare our products
+        url: /
+        color: white
+      - content: try for free
+        url: /
+        color: green
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  color:
+    type: select
+    options:
+      values:
+        - green
+        - white
+  

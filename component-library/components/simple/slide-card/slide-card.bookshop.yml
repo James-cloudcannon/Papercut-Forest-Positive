@@ -1,0 +1,29 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Slide-card"
+  description:
+  icon: view_carousel
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title:
+  body_text: 
+  url: 
+  logo: 
+  primary_image: 
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  title: "HP"
+  body_text: "Announced targets for reducing carbon emissions and climate partnerships to work on ocean conservation and forest restoration"
+  url: "#"
+  logo: "https://picsum.photos/500"
+  primary_image: "https://picsum.photos/500"
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  logo:
+    type: image

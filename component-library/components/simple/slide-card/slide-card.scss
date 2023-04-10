@@ -1,0 +1,110 @@
+.c-slide-card { $c: &;
+    height: 100%;
+    // background-color: black;
+    position: absolute;
+    z-index: 1;
+    transition: left .4s cubic-bezier(.47,.13,.15,.89);
+    margin: 12px;
+
+    @media (max-width: 478px) {
+        position: relative;
+        left: unset !important;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.offscreen {
+
+        #{$c}__inner-wrapper {
+            padding-bottom: 0;
+            max-height: 418px;
+            opacity: 0.3;
+
+         
+        }
+    }
+
+    &.hidden {
+        #{$c}__inner-wrapper {
+            opacity: 0;
+
+         
+        }
+    }
+
+
+
+    &__inner-wrapper{
+        background: #FFFFFF;
+        box-shadow: 0px 12px 20px rgba(27, 27, 29, 0.15);
+        border-radius: 8px;
+        height: 418px;
+        width: 318px;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 32px;
+        box-sizing: content-box;
+        transition: padding-bottom 0.2s cubic-bezier(.47,.13,.15,.89),
+                    opacity 0.2s cubic-bezier(.47,.13,.15,.89);
+    }
+        
+    
+    &__image-wrapper{
+        width: 318px;
+        height: 207px;
+        position: relative;
+    }
+
+    &__primary-image {
+        width: 100%;
+        height: 207px;
+        object-fit: cover;
+    }
+
+    &__logo {
+        position: absolute;
+        right: 24px;
+        bottom: -24px;
+        width: 46px;
+        height: 46px;
+        object-fit: contain;
+    }
+
+    &__body-content{
+        padding-top: 52px;
+        padding: 52px 24px 35px 24px;
+        font-family: var(--font-sans-heading);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        user-select: none;
+        h5{
+            font-family: var(--font-sans-heading);
+            font-weight: 600;
+            font-size: var(--text-xl);
+            line-height: var(--leading-xl);
+            color: #343A40;   
+            font-style: normal;
+            margin: 0;     
+        }
+        a{
+            font-family: var(--font-sans-body);
+            color: #2B5E8F;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: var(--text-base);
+            line-height: var(--leading-base);
+        }
+        p{
+            font-family: var(--font-sans-body);
+            font-weight: 400;
+            font-size: var(--text-sm);
+            line-height: var(--leading-sm);
+            color: #343A40;
+        }
+    }
+}
+
+

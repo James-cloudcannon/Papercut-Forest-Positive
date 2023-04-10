@@ -1,0 +1,26 @@
+{{ $c := "c-banner" }}
+
+<section class="{{ $c }}">
+  {{ if eq .image_alignment "left" }}
+  <div class="{{ $c }}__image {{ $c }}__image--left">
+    <img src="{{ .image.path }}" alt="{{ .image_alt }}" />
+  </div>
+
+  <div class="{{ $c }}__content {{ $c }}__content--right">
+    <p class="{{ $c }}__title">{{.title}}</p>
+    <h1 class="{{ $c }}__heading">{{.heading | safeHTML}}</h1>
+    <p class="{{ $c }}__paragraph">{{ .paragraph }}</p>
+  </div>
+  {{ else }}
+  <div class="{{ $c }}__content {{ $c }}__content--left">
+    <p class="{{ $c }}__title">{{.title}}</p>
+    <h1 class="{{ $c }}__heading">{{.heading | safeHTML}}</h1>
+    <p class="{{ $c }}__paragraph">{{ .paragraph }}</p>
+  </div>
+
+  <div class="{{ $c }}__image {{ $c }}__image--right">
+    <img src="{{ .image.path }}" alt="{{ .image_alt }}" />
+  </div>
+  {{ end }}
+</section>
+

@@ -1,0 +1,7 @@
+{{ $c := "c-svg-icon-group" }}
+<div class="{{ $c }}" style="--svg-gap: {{ .gap }}px;">
+    {{ .svg_code }}
+    {{ range .icons }}
+        {{ partial "bookshop" (slice "generic/svg-icon" .) }}
+    {{ end }}
+</div>

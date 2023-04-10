@@ -1,0 +1,81 @@
+.c-footer-cta {
+    * {
+        -moz-osx-font-smoothing: auto;
+        -webkit-font-smoothing: auto;
+        text-rendering: unset;
+        -webkit-text-stroke: unset;
+    }
+    font-family: var(--font-sans-body);
+    font-size: var(--text-base);
+    line-height: var(--leading-base);
+    color: var(--text-white);
+    background-color: #19892b;
+    display: grid;
+    grid-template-columns: var(--twelve-column-grid);
+    padding: 32px 0px;
+
+    &__content {
+        grid-column: 2 / -2;
+       
+
+        &__heading {
+            font-family: var(--font-sans-heading);
+            font-weight: var(--font-semibold);
+            font-size: var(--text-4xl);
+            line-height: var(--leading-4xl);
+            margin-top: 0;
+            margin-bottom: 0px !important;
+        }
+        &__description {
+            margin-top: 8px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__links {
+        grid-column: 2 / -2;
+        display: flex;
+        flex-wrap: wrap;
+        &__link {
+            border: 2px solid var(--text-white);
+            border-radius: 4px;
+            font-family: var(--font-sans-heading);
+            font-weight: var(--font-semibold);
+            font-size: var(--text-sm);
+            line-height: 1.25rem;
+            text-transform: uppercase;
+            padding: 11px 24px 12px;
+            text-decoration: none;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+            &--white {
+                background-color: var(--bg-white);
+                transition: color .25s;
+                color: #19892b;
+                &:hover {
+                    color: #006316;
+                }
+            }
+            &--green {
+                background-color: #19892b;
+                color: var(--text-white);
+            }
+        }
+    }
+    @media screen and (min-width: 1023px) {
+        &__content {
+            grid-column: 2 / 8;
+            &__description {
+                margin-bottom: 0px;
+            }
+        }
+        &__links {
+            grid-column: 9 / -2;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+}

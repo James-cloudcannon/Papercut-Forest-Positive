@@ -1,0 +1,7 @@
+{{ $c := "c-footer" }}
+<footer class="{{ $c }}">
+    {{ partial "bookshop" (slice "structures/footer/footer-navigation" .navigation )}}
+    {{ partial "bookshop" (slice "simple/navigation-form" .form )}}
+    <hr>
+    {{ partial "bookshop" (slice "structures/footer/further-information" .information )}}
+</footer>

@@ -1,0 +1,33 @@
+{{$c := "c-left-right-block"}}
+
+<div class="{{ $c }}" style="background-color: {{ .background_color }};">
+  {{ if eq .image_alignment "left"}}
+  <div class="{{ $c }}__left">
+      <img src="{{ .image.path }}" alt="{{ .image.alt }}">
+  </div>
+
+  <div class="{{ $c }}__right">
+    {{ if .title }}<p class="{{ $c }}__title">{{.title}}</p>{{ end }}
+      {{ if .heading }}{{ partial "bookshop" (slice "generic/heading" .heading )}} {{ end }}
+      <div class="{{ $c }}__right__description">
+          <p>{{ .description | markdownify }}</p>
+      </div>  
+  </div>
+
+  {{ else }}
+
+  <div class="{{ $c }}__left">
+    {{ if .title }}<p class="{{ $c }}__title">{{.title}}</p>{{ end }}
+    {{ if .heading }}{{ partial "bookshop" (slice "generic/heading" .heading )}} {{ end }}
+      <div class="{{ $c }}__left__description">
+          <p>{{ .description | markdownify }}</p>
+      </div>
+  </div>
+
+  <div class="{{ $c }}__right">
+    <img src="{{ .image.path }}" alt="{{ .image.alt }}">
+  </div>
+
+  {{ end }}
+
+</div>

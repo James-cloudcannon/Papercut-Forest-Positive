@@ -1,0 +1,110 @@
+.c-footer {
+    * {
+        -moz-osx-font-smoothing: auto;
+        -webkit-font-smoothing: auto;
+        text-rendering: unset;
+        -webkit-text-stroke: unset;
+    }
+    background-color: #3b3b3d;
+    display: grid;
+    grid-template-columns: var(--twelve-column-grid);
+    padding-left: 0 16px;
+    hr {
+        display: none;
+    }
+    ul {
+        padding: 0;
+        li {
+            list-style-type: none;
+        }
+    }
+    .c-footer-mobile-navigation {
+        grid-row: 1;
+        grid-column: 2 / -2;
+        padding-top: 32px;
+        ul {
+            margin: 0;
+        }
+    }
+    .c-footer-navigation {
+        display: none;
+        ul {
+            margin: 0;
+        }
+    }
+    .c-subscribe-form {
+        grid-row: 3;
+        grid-column: 2 / -2;
+        padding-top: 24px;
+        padding-bottom: 42px;
+        ul {
+            margin: 0;
+        }
+    }
+    .c-further-information {
+        border-top: 1px solid #d9d9dc;
+        grid-row: 4;
+        grid-column: 2 / -2;
+        padding-top: 88px;
+        padding-bottom: 64px;
+    }
+    
+    @media screen and (min-width: 767px) {
+        .c-subscribe-form {
+            width: calc(49.99% - 16px);
+            justify-self: center;
+        }
+    }
+
+    @media screen and (min-width: 1023px) {
+        .c-subscribe-form {
+            width: 49.99%;
+            justify-self: center;
+            padding-bottom: 18px;
+        }
+        .c-footer-mobile-navigation {
+            display: none;
+        }
+        .c-footer-navigation {
+            display: block;
+            grid-row: 1;
+            grid-column: 2 / -2;
+            padding-top: 32px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #d9d9dc;
+        }
+    }
+
+    @media screen and (min-width: 1279px) {
+        hr {
+            display: block;
+            grid-row: 2;
+            grid-column: 1 / -1;
+            width: var(--max-width);
+            border: none;
+            border-top: 1px solid #d9d9dc;
+            margin: 0 auto 0 auto;
+        }
+        .c-subscribe-form {
+            width: 100%;
+            grid-row: 1;
+            grid-column: -6 / -2;
+            padding: 0;
+            padding-left: 48px;
+            margin-top: 32px;
+            padding-bottom: 18px;
+            margin-bottom: 22px;
+            border-left: 1px solid #d9d9dc;
+        }
+        .c-footer-navigation {
+            grid-row: 1;
+            grid-column: 2 / 10;
+            border: none;
+        }
+        .c-further-information {
+            grid-column: 2 / -2;
+            border: none;
+            padding-top: 64px;
+        }
+    }
+}

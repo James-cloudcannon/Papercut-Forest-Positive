@@ -1,0 +1,29 @@
+{{ $c := "c-background-video"}}
+
+<div class="{{ $c }}">
+    {{ if .video_id }}
+    <div class="{{ $c }}__video-container wistia_embed wistia_async_{{ .video_id}} playerColor=ff0000" 
+    x-init='window._wq = window._wq || [];
+    _wq.push({
+      id: "{{ .video_id }}",
+      options: {
+        playerColor: "ff0000",
+        controlsVisibleOnLoad: false,
+        volumeControl: false,
+        muted: true,
+        endVideoBehavior: "loop",
+        fitStrategy: "cover",
+        silentAutoPlay: true,
+        autoPlay: true,
+        playButton: false
+      }
+    });'>
+    </div>
+    {{ else }} 
+    <div class="{{ $c }}__video-container">
+        <img src="{{.fall_back_image}}" alt="">
+    </div>
+    {{ end }}
+</div>
+<script src="video-placeholder.js"></script>
+

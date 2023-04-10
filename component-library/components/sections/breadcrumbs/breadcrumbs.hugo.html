@@ -1,0 +1,6 @@
+{{ $c := "c-breadcrumbs" }}
+
+<nav class="{{ $c }} {{ $c }}--background-{{ .background_color }} js-breadcrumbs">
+  {{/*  The code for this is created in baseof.html (this is so that .RelPermalink can be accessed) and then x-teleport is used to move it inside this element
+  all styling is done within this component*/}}
+</nav>

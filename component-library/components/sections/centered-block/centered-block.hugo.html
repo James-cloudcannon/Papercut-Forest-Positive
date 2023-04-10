@@ -1,0 +1,12 @@
+{{$c := "c-centered-block"}}
+
+
+<div class="{{ $c }}" style="background-color: {{.background_color}};">
+  <div class="{{ $c }}__content">
+    <h2 class="{{ $c }}__heading">{{ .heading }}</h2>
+    <p class="{{ $c }}__description">{{ .description | safeHTML }}</p>
+  </div>
+  <div class="{{ $c }}__image">
+    <img src="{{ .image.path }}" alt="{{ .image.alt }}" />
+  </div>
+</div>

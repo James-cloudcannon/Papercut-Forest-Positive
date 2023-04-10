@@ -1,0 +1,17 @@
+{{ $c := "c-footer-navigation" }}
+<nav class="{{ $c }}">
+    <ul class="{{ $c }}__main">
+        {{ range .sections }}
+            {{ if ne .heading "Partners"}} <div class="{{ $c }}__main__section"> {{ end }}
+                <div class="{{ $c }}__main__section__group">
+                    <li>{{ .heading }}</li>
+                    <ul class="{{ $c }}__main__section__group__subgroup">
+                        {{ range .links }}
+                            <li><a href="{{ .url }}" {{ if .open_in_new_tab }} target="_blank" rel="noopener" {{ end }}>{{ .name }}{{ if eq .name "Tour" }}<sup>[Legacy]</sup>{{ end }}</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            {{ if ne .heading "Support"}} </div> {{ end }}
+        {{ end }}
+    </ul>
+</nav>

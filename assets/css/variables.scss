@@ -1,0 +1,79 @@
+body {
+	// Background colours
+	--bg-white: #FFFFFF;
+	--bg-slate: #F1F3F5;
+	--bg-green: #19892B;
+	--bg-lime-50: #f2f8e8;
+	--bg-zinc: #3B3B3D;
+	--bg-zinc-600: #5A5A5C;
+	--bg-zinc-900: #1B1B1D;
+	--bg-emerald-50: #E7F6E9;
+	--bg-stone-200: #E9ECEF;
+	--bg-gray-200: #E9E9EC;
+	--bg-gray-100: #f2f2f4;
+	--bg-gray-50: #F8F9FA;
+	--bg-green-100: #E7F6E9;
+	
+	//text colours
+	--text-zinc: #3B3B3D;
+	--text-zinc-500: #6E6E70;
+	--text-zinc-300: #D9D9DC;
+	--text-gray-100: #F2F2F4;
+	--text-gray-200: #E9E9EC;
+	--text-neutral-400: #969698;
+	--text-stone: #343A40;
+	--text-green-500: #26A726;
+	--text-green-600: #27AA27;
+	--text-green-700: #19892B;
+	--text-lime-600: #36b21a;
+	--text-emerald-600: #00ae5a;
+	--text-blue: #2B5E8F;
+	--text-rose-700: #BF2348;
+	--text-white: #FFFFFF;
+
+	// Font family
+	--font-sans-heading: Barlow,Verdana,sans-serif;
+	--font-sans-body: Source Sans Pro,Arial,sans-serif;
+
+	// Weight of text
+	--font-bold: 700;
+	--font-semibold: 600;
+	--font-normal: 400;
+
+	// Font size
+	--text-7xl: 5rem; //56px
+	--text-6xl: 3.5rem; //56px
+	--text-4xl: 2rem;	//32px
+	--text-3xl: 1.75rem; //28px
+	--text-2xl: 1.5rem; //24px
+	--text-xl: 1.25rem; //20px
+	--text-base: 1rem;	//16px
+	--text-sm: 0.875rem; //14px
+	--text-xs: 0.625rem; //10px
+	
+	// Line height (named to match with font sizes)
+	--leading-7xl: 6.25rem;
+	--leading-6xl: 4.1875rem;
+	--leading-4xl: 2.5rem;
+	--leading-3xl: 2.1875rem;
+	--leading-2xl: 2rem;
+	--leading-xl: 1.75rem;
+	--leading-base: 1.5rem;
+	--leading-sm: 1.125rem;
+	--leading-xs: 0.75rem;
+
+	// Letter spacing
+	--tracking-widest: 0.125rem
+
+	//shadows
+	--shadow--default: 0 1px 6px 0 rgba(27, 27, 29, 0.15);
+	--shadow--medium: 0 6px 12px 0 rgba(27, 27, 29, 0.15);
+	--shadow--large: 0 12px 20px 0 rgba(27, 27, 29, 0.15);
+	--shadow--xlarge: 0 20px 40px 0 rgba(27, 27, 29, 0.2);
+	--shadow--none: none;
+
+	// Grid layout to be used on most components
+	--twelve-column-grid: 1fr repeat(12, calc(min(96px, 7.78%))) 1fr;
+
+	--max-width: 1280px;
+}

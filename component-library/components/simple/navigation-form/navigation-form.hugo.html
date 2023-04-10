@@ -1,0 +1,20 @@
+{{ $c := "c-subscribe-form" }}
+<div class="{{ $c }}">
+   <p class="{{ $c }}__heading">Subscribe to PaperCut communications</p>
+   <div class="{{ $c }}__form-wrapper">
+        <form action="#" class="{{ $c }}__form">
+            <div class="{{ $c }}__form__input-group">
+                <label for="email" class="{{ $c }}__form__input-group__label" hidden>Email</label>
+                <input type="{{ .email_input.type }}" id="email" class="{{ $c }}__form__input-group__input" placeholder="{{ .email_input.placeholder}}">
+            </div>
+            <div class="{{ $c }}__form__input-group">
+                <input type="{{ .checkbox_input.type }}" id="email-subscribe" class="{{ $c }}__form__input-group__input">
+                <label for="email-subscribe" class="{{ $c }}__form__input-group__label">{{ .checkbox_input.label }}</label>
+            </div>
+            <p class="{{ $c }}__terms">{{ .privacy_policy | safeHTML }}</p>
+            {{ partial "bookshop" (slice "generic/link" .button )}}
+        </form>
+            
+        <p>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+    </div>
+</div>

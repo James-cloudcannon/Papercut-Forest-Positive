@@ -1,0 +1,35 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+    - post_blocks
+  label: "Carousel"
+  description: Heading, description and carousel of information cards
+  icon: view_carousel
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  heading: ""
+  text_content: ""
+  slides: [bookshop:simple/slide-card]
+  background_color: "#FFFFFF"
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  heading: "Sustainability in the print industry is bigger than us"
+  text_content: "We highly recommend you familiarize yourself with the following incredible organizations ensuring a better tomorrow for our planet:"
+  slides:
+    - bookshop:simple/slide-card
+    - bookshop:simple/slide-card
+    - bookshop:simple/slide-card
+    - bookshop:simple/slide-card
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  background_color:
+    type: select
+    options:
+      values:
+        - "#F8F9FA"
+        - "#FFFFFF"

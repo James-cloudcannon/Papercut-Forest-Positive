@@ -1,0 +1,59 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Left-right-block"
+  description: Configurable title, description and image, the main content can be positioned to the right or left as required.
+  icon: vertical_split
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: 
+  heading: bookshop:generic/heading
+  description: ""
+  image:
+    path: ""
+    alt: ""
+  image_alignment: "left"
+  background_color: 
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  title: "hello"
+  heading: bookshop:generic/heading
+
+  description: >-
+    20% of current greenhouse gases are due to tropical forest destruction. The soldiers on the frontlines of the climate change war are the world’s trees. One mature tree absorbs more than 48 pounds of carbon dioxide each year. This creates enough oxygen for a human to breath for 2 years.
+
+
+    Unfortunately, due to climate change and deforestation, the amount of trees on the planet is shrinking  every day. 
+
+
+    With 30% trees cut down being used for paper processing, essential business printing needs to do more   than minimize paper waste. We need to maximize positive environmental investment.
+  image:
+    path: "https://picsum.photos/551/281"
+    alt: "Forest Positive"
+  image_alignment: "left"
+  background_color: "#F8F9FA"
+
+  
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  image_alignment:
+    type: select
+    options:
+      values:
+        - "left"
+        - "right"
+  description:
+    type: markdown
+  background_color:
+    type: select
+    options:
+      values:
+        - "#F8F9FA"
+        - "#F1F3F5"
+
+

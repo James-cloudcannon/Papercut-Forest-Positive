@@ -1,0 +1,16 @@
+{{ $c := "c-heading"}}
+{{ if eq .heading_hierarchy "h1"}}
+<h1 class="{{ $c }} {{ $c }}--{{ .heading_style }}">{{ .heading_text | safeHTML }}</h1>
+{{ else if eq .heading_hierarchy "h2"}}
+<h2 class="{{ $c }} {{ $c }}--{{ .heading_style }}">{{ .heading_text | safeHTML }}</h2>
+{{ else if eq .heading_hierarchy "h3"}}
+<h3 class="{{ $c }} {{ $c }}--{{ .heading_style }}">{{ .heading_text | safeHTML }}</h3>
+{{ else if eq .heading_hierarchy "h4"}}
+<h4 class="{{ $c }} {{ $c }}--{{ .heading_style }}">{{ .heading_text | safeHTML }}</h4>
+{{ else if eq .heading_hierarchy "h5"}}
+<h5 class="{{ $c }} {{ $c }}--{{ .heading_style }}">{{ .heading_text | safeHTML }}</h5>
+{{ else if eq .heading_hierarchy "h6" }}
+<h6 class="{{ $c }} {{ $c }}--{{ .heading_style }}">{{ .heading_text | safeHTML }}</h6>
+{{ else }}
+<p class="{{ $c }} {{ $c }}--{{ .heading_style }}">{{ .heading_text | safeHTML }}</p>
+{{ end }}
