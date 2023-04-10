@@ -1,5 +1,6 @@
 .c-left-right-featured-cta {
 
+
     grid-template-columns: var(--twelve-column-grid);
     display: grid;
     min-height: 541px;
@@ -7,6 +8,8 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 30px;
+    padding-left: 64px;
+    padding-right: 64px;
 
     .c-background-video {
        height: 541px;
@@ -18,11 +21,10 @@
     }
 
     &__left--heading{
-        grid-column: 2 / 7;
-        // center in middle of grid vertical and horizontal
+        grid-column: 1 / 7;
         display: flex;
         align-items: center;
-        justify-content: center;
+        // justify-content: center;
     }
     
     &__right--heading{
