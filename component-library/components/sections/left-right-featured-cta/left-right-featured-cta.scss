@@ -7,12 +7,23 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    padding-bottom: 30px;
-    padding-left: 64px;
-    padding-right: 64px;
+    // padding-bottom: 30px;
+    // padding-left: 64px;
+    // padding-right: 64px;
+
+    @media (max-width: 768px){
+        min-height: 683px;
+    }
 
     .c-background-video {
        height: 541px;
+       
+       @media screen and (max-width: 1160px){
+        height: 663px;
+        }
+        @media screen and (max-width: 766px){
+        height: 705px;
+        }    
       
     }
 
@@ -20,23 +31,26 @@
         z-index: 1;
     }
 
+   
+
     &__left--heading{
-        grid-column: 1 / 7;
+        grid-column: 2 / 7;
         display: flex;
-        align-items: center;
+        
         // justify-content: center;
     }
     
     &__right--heading{
         grid-column: 9 / 14;
         display: flex;
-        align-items: center;
+       
         justify-content: center;
 
     }
     &__left--heading, &__right--heading{
         max-height: 542px;
         height: 100%;
+        align-items: flex-start;
         h1{
             line-height: 125%;
             color: #fff;
@@ -44,25 +58,61 @@
             font-style: normal;
             font-weight: 700;
             font-size: 56px;
+
+            @media screen and (max-width: 1160px){
+                margin-bottom: 0;
+            }
            
            
+        }
+
+        @media screen and (min-width: 1160px){
+            height: 541px;
+            display: flex;
+            align-items: center;
+        }
+        @media screen and (max-width: 1160px){
+            margin-top: 56px;
+            margin-bottom: 157px;
+        }
+        @media screen and (max-width: 766px){
+            margin-top: 113px;
+            margin-bottom: 123px;
+            grid-column: 2 / -2;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            
         }
       
     }
     
     &__left--cta{
         grid-column: 2 / 8;
-       
+        @media screen and (max-width: 1160px){
+            grid-column: 2 / 12;
+            grid-row: 2/2;
+        }
     }
 
     &__right--cta{
         grid-column: 8 / 14;
-       
+        @media screen and (max-width: 1160px){
+            grid-column: 4 / 14;
+            grid-row: 2/2;
+        }
     }
 
 
     &__right--cta,  &__left--cta{
         margin-top: 100px;
+        @media screen and (max-width: 1160px){
+            margin-top: 0;
+        }
+        @media screen and (max-width: 766px){
+            grid-column: 2 / 14;
+
+        }   
        
     }
 

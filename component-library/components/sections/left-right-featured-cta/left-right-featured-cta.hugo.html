@@ -9,7 +9,7 @@
       <div class="{{ $c }}__left {{ $c }}__left--heading">
           {{ if .logo_image_path }}
               <img src="{{ .logo_image_path }}" alt="{{ .logo_image_alt_tag }}">
-              {{/*  <h1 style="position: absolute; opacity: 0">{{ .heading }}</h1>  */}}
+              <h1 style="position: absolute; opacity: 0">{{ .heading }}</h1>
           {{ else }}
               <h1>{{ .heading }}</h1>
           {{ end }}
@@ -25,7 +25,7 @@
   <div class="{{ $c }}__right {{ $c }}__right--heading">
       {{ if .logo_image_path }}
       <img src="{{ .logo_image_path }}" alt="{{ .logo_image_alt_tag }}">
-      {{/*  <h1 style="position: absolute; opacity: 0">{{ .heading }}</h1>  */}}
+      <h1 style="position: absolute; opacity: 0">{{ .heading }}</h1>
       {{ else }}
           <h1>{{ .heading }}</h1>
       {{ end }}
