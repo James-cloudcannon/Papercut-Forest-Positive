@@ -88,6 +88,44 @@ content_blocks:
         _bookshop_name: simple/background-video
         video_id: ''
         fall_back_image: "https://picsum.photos/500"
+    - _bookshop_name: sections/carousel
+      heading: "Sustainability in the print industry is bigger than us"
+      text_content: "We highly recommend you familiarize yourself with the following incredible organizations ensuring a better tomorrow for our planet:"
+      slides:
+        - _bookshop_name: simple/slide-card
+          primary_image: "https://picsum.photos/500"
+          title: "HP carbon neutral offering"
+          body_text: "HP's Sustainable Impact creates lasting, positive change for the planet, our people, and the communities where we live, work, and do business."
+          url: "#"
+          logo: "https://picsum.photos/500"
+        - _bookshop_name: simple/slide-card
+          primary_image: "https://picsum.photos/500"
+          logo: "https://picsum.photos/500"
+          title: "PrintReleaf’s tree planting"
+          body_text: "PrintReleaf is a Certification System and Software Platform for Automated Global Reforestation."
+          url: "#"
+        - _bookshop_name: simple/slide-card
+          primary_image: "https://picsum.photos/500"
+          logo: "https://picsum.photos/500"
+          title: "Konica Minolta's program"
+          body_text: "Konica Minolta carries out activities to reduce environmental impact as part of its efforts to achieve “Carbon Minus” by 2050."
+          url: "#"
+        - _bookshop_name: simple/slide-card
+          primary_image: "https://picsum.photos/500"
+          logo: "https://picsum.photos/500"
+          title: "The Nature Conservancy"
+          body_text: "The Nature Conservancy is a global conservation organization. They work to protect the lands and waters on which all life depends. They have a goal to protect 30% of the planet by 2030."
+          url: "#"
+        - _bookshop_name: simple/slide-card
+          primary_image: "https://picsum.photos/500"
+          logo: "https://picsum.photos/500"
+          title: "The World Bank"
+          body_text: "The World Bank is a global development cooperative owned by 189 member countries. They work to reduce poverty and improve living standards for people in developing countries."
+          url: "#"
+          
+
+        
+
     - _bookshop_name: sections/left-right-with-list
       image_path: https://picsum.photos/437/437
       heading: 
