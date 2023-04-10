@@ -78,6 +78,10 @@ content_blocks:
              
              
              You hand-pick which global reforestation project plants your trees, then monitor and display your printing and tree planting volumes via a live dashboard. You’ll also be equipped with an in-product Marketing Toolkit of website components, and social media and copy templates to help tell your business’s sustainability story.
+          link:
+            _bookshop_name: generic/link
+            content: "Learn more about papercut grows"
+            url: "#"
       link:
           content: "Learn more about papercut grows"
           url: "#"
