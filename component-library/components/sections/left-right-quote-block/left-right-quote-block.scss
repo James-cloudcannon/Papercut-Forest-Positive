@@ -1,7 +1,15 @@
 .c-left-right-quote-block {
     grid-template-columns: var(--twelve-column-grid);
     display: grid;
-    padding: 96px 64px;
+    padding: 96px 0px;
+
+
+    @media screen and (min-width: 768px) and (max-width: 1279px){
+        padding: 96px 86px;
+    }
+    
+
+
     
  
     &__body{
@@ -12,13 +20,55 @@
         &--right{
 
         
-            grid-column: 2 / 8;        
+            grid-column: 2 / 8;
+            margin-bottom: 64px;
+            
+            @media screen and (min-width: 479px){
+                grid-column: 2 / 8;
+                padding-right: 50px;
+
+            }
+            @media screen and (max-width: 768px){
+                grid-column: 2 / 14;
+                padding-right: 0px;
+
+            }
+            @media screen and (max-width: 478px){
+                grid-column: 2 / 14;
+                padding-right: 0px;
+
+            }
+            @media screen and (min-width: 1279px){
+                grid-column: 2 / 8;
+                padding-right: 50px;
+                margin-bottom: 0;
+            }
            
 
            
         }
         &--left{
-            grid-column: 9 / 14;        
+            grid-column: 8 / 14; 
+            
+            @media screen and (min-width: 479px){
+                grid-column: 8 / 14;        
+                padding-left: 50px;
+
+            }
+            @media screen and (max-width: 768px){
+                grid-column: 2 / 14;
+                padding-left: 0px;
+
+            }
+            @media screen and (max-width: 478px){
+                grid-column: 2 / 14;
+                padding-left: 0px;
+
+            }
+            @media screen and (min-width: 1279px){
+                grid-column: 8 / 14;        
+                padding-left: 50px;
+            }
 
           
 
@@ -31,9 +81,14 @@
             font-size: var(--text-base);
             line-height: var(--leading-base);
             text-decoration: none;
-            // letter-spacing: 2px;
+            letter-spacing: 2px;
             margin: 0;
             text-transform: uppercase;
+
+            @media screen and (max-width: 768px){
+                padding-top: 16px;
+            }
+
         }
         p{
             font-size: 16px;
@@ -47,15 +102,58 @@
     }
 
     &__quote{
+        max-width: 468px;
         &--right{
-            grid-column: 9 / 14;
-            // max-width: 466px;
+            grid-column: 8 / 14;
+            
+
+            @media screen and (min-width: 479px){
+                grid-column: 8 / 14;
+                padding-left: 50px;
+
+            }
+            @media screen and (max-width: 478px){
+                grid-column: 2 / 14;
+                padding-left: 0px;
+
+            }
+            @media screen and (max-width: 768px){
+                grid-column: 2 / 14;
+                padding-left: 0px;
+
+            }
+            @media screen and (min-width: 1279px){
+                grid-column: 8 / 14;
+                padding-left: 50px;
+
+            }
            
         }
 
         &--left{
             grid-column: 2 / 8;
             // max-width: 466px;
+            @media screen and (min-width: 479px){
+                grid-column: 2 / 8;
+                padding-right: 50px;
+
+            }
+            @media screen and (max-width: 478px){
+                grid-column: 2 / 14;
+                padding-right: 0px;
+
+            }
+            @media screen and (max-width: 768px){
+                grid-column: 2 / 14;
+                padding-right: 0px;
+
+            }
+            @media screen and (min-width: 1279px){
+                grid-column: 2 / 8;
+                padding-right: 50px;
+
+            }
+
         }
         &__quoteBody{
             display: flex;
