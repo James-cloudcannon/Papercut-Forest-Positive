@@ -1,69 +1,56 @@
-.c-banner {
+.c-hero-banner {
 
     display: grid;
     grid-template-columns: var(--twelve-column-grid);
     padding: 96px 0;
 
+    @media screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        padding: 96px 64px;
+    }
 
-    &__image{
-
-        
-
+    &__image{       
     
-       
-
         &--left{
             grid-column: 2 / 8;
-            // padding-right: 64px;
-
             img{
-                
                 max-width: 100%;
                 width: 100%;
             }
-
-          
         }
 
         &--right{
             grid-column: 8 / 14;
-            // padding-right: 64px;
-           
-            
+    
             img{
-                // margin-right: 98px;
                 max-width: 100%;
                 width: 100%;
             }
-          
-               
-            
-
         }
-
-    
-
     }
-
-
 
     &__content{
 
-        max-width: 561px;
-            
             &--left{
                 grid-column: 2 / 8;
                 padding-left: 64px;
-             
+
+                @media screen and (max-width: 1023px){
+                    padding-left: 0;
+                }
             }
     
             &--right{
                 grid-column: 8 /14;
                 padding-left: 64px;
-                // margin-right: 98px;             
+                
+                @media screen and (max-width: 1023px){
+                    padding-left: 0;
+                }
     
             }
-  
     }
 
 
@@ -104,6 +91,5 @@
 
     }
 
-    
-
 }
+

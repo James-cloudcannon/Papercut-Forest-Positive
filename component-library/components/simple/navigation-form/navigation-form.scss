@@ -20,9 +20,6 @@
             color: var(--text-white);
             text-decoration-color: var(--text-white);
         }
-
-        
-
     }
 
     &__form{
@@ -37,19 +34,16 @@
             display: flex;
             gap: .75rem;
             
-
             input[type="email"]{
                 min-width: 100%;
                 font-weight: var(--font-semibold);
                 padding: .75rem;
-
             }
-            // make checkbox larger
+
             input[type="checkbox"]{
                 width: 2rem;
                 height: 2rem;
                 margin: 0;
-
             }
         }
 

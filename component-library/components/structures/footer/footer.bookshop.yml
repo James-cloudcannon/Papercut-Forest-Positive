@@ -2,7 +2,7 @@
 spec:
   structures:
   label: Footer
-  description:
+  description: "A footer with a navigation, further information and a newsletter form."
   icon: add_link
   tags: []
 

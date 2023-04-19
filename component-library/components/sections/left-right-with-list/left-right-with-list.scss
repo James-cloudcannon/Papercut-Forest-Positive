@@ -44,16 +44,14 @@
 
     }
     &__body-container{
-       
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: flex-end;
 
         &--right{
             grid-column: 7 / 14;
             grid-row: 1/2;
+            margin-bottom: 48px;
             @media screen and (min-width: 479px){
                 grid-column: 7 / 14;
+                
             }
             @media screen and (max-width: 478px){
                 grid-column: 2 / 14;
@@ -96,17 +94,24 @@
         }
 
         ul{
-            padding-inline-start: 20px;
+            padding-inline-start: 10px;
             li{
                 list-style-image: url('https://cdn1.papercut.com/web/cloudcannon/tick.svg');
-                margin-bottom: 8px;
                 font-style: normal;
+                margin-bottom: 8px;
                 font-weight: 400;
                 font-size: 16px;
                 color: var(--text-stone);
                 font-family: var(--font-sans-body);
                 line-height: 20px;
                 margin-left: 8px;
+
+                &:last-child{
+                    margin-bottom: 0;
+                    @media screen and (min-width: 479px){
+                        margin-bottom: 8px;
+                    }
+                }
 
                 a{
                     font-style: normal;

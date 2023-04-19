@@ -7,9 +7,7 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    // padding-bottom: 30px;
-    // padding-left: 64px;
-    // padding-right: 64px;
+    padding-bottom: 30px;
 
     @media (max-width: 768px){
         min-height: 683px;
@@ -36,16 +34,12 @@
     &__left--heading{
         grid-column: 2 / 7;
         display: flex;
-        
-        // justify-content: center;
     }
     
     &__right--heading{
         grid-column: 9 / 14;
         display: flex;
-       
         justify-content: center;
-
     }
     &__left--heading, &__right--heading{
         max-height: 542px;

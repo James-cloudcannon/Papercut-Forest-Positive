@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: "Further-information"
-  description:
+  description: "A list of links to further information."
   icon: info
   tags: []
 

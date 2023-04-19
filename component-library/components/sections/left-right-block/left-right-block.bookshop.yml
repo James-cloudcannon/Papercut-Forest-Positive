@@ -2,7 +2,7 @@
 spec:
   structures:
     - content_blocks
-  label: "Left-right-block"
+  label: "Left Right Block"
   description: Configurable title, description and image, the main content can be positioned to the right or left as required.
   icon: vertical_split
   tags: []

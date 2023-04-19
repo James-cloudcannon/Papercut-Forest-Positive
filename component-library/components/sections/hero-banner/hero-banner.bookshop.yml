@@ -2,7 +2,7 @@
 spec:
   structures:
     - content_blocks
-  label: "Banner"
+  label: "Hero Banner"
   description: "A banner section with a background image and text, with option to set image location  on left or right."
   icon: vertical_split
   tags: []

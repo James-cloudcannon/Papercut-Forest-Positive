@@ -1,6 +1,6 @@
 import Alpine from "alpinejs";
 import intersect from '@alpinejs/intersect'
-import threeTileCarousel from "./carousel/index.js";
+import carousel from "./carousel/index.js";
 
 
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
@@ -13,13 +13,7 @@ window.disableScroll = disableBodyScroll;
 window.enableScroll = enableBodyScroll;
 window.Alpine = Alpine;
 
-// Alpine.plugin(intersect)
-// Alpine.store('show_sticky_cta', {
-//   on: false,
-//   toggle() {
-//       this.on = ! this.on
-//   }
-// })
-Alpine.data('threeTileCarousel', threeTileCarousel);
+
+Alpine.data('carousel', carousel);
 
 Alpine.start();

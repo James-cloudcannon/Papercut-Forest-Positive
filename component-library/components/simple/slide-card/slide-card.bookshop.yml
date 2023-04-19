@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: "Slide-card"
-  description:
+  description: "A card with a logo, title, body text and a link."
   icon: view_carousel
   tags: []
 

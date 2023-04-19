@@ -1,6 +1,6 @@
 {{ $c := "c-background-video"}}
 
-<div class="{{ $c }}">
+<div class="{{ $c }}" style="{{ .background_color }}">
     {{ if .video_id }}
     <div class="{{ $c }}__video-container wistia_embed wistia_async_{{ .video_id}} playerColor=ff0000" 
     x-init='window._wq = window._wq || [];

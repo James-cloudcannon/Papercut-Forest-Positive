@@ -1,6 +1,39 @@
+@function strip-unit($number) {
+	@if type-of($number) == "number" and not unitless($number) {
+		@return $number / ($number * 0 + 1);
+	}
+
+	@return $number;
+}
+
+@mixin scale-custom($properties, $min-value, $max-value, $min-vw, $max-vw) {
+	@each $property in $properties {
+		#{$property}: $min-value;
+	}
+
+	@media (min-width: $min-vw) {
+		@each $property in $properties {
+			#{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+		}
+	}
+
+	@media (min-width: $max-vw) {
+		@each $property in $properties {
+			#{$property}: $max-value;
+		}
+	}
+}
+
+@function strip-unit($number) {
+	@if type-of($number) == "number" and not unitless($number) {
+		@return $number / ($number * 0 + 1);
+	}
+
+	@return $number;
+}
 
 .c-carousel {
-	padding: 6rem 0 5.325rem 0; // TODO: check this okay -> changed from margin
+	padding: 6rem 0 5.325rem 0; 
 	overflow: hidden;
 	@media (max-width: 478px) {
 		height: 100%;
@@ -68,7 +101,15 @@
 		transition: width .4s;
 		overflow: visible;
 		margin: 0;
+		@include scale-custom(margin-left, -215px, -215px, 1280px, 2560px);
+	
+		@media (max-width: 1280px) {
+			@include scale-custom(margin-left, -485px, -215px, 750px, 1280px);
+		}
 		
+		@media (max-width: 750px) {
+			@include scale-custom(margin-left, -615px, -485px, 478px, 750px);
+		}
 
 		@media (max-width: 478px) {
 			display: flex;
@@ -118,18 +159,5 @@
 			}
 		}
 	}
-    .blur {
-        -webkit-filter: blur(5px);
-        -moz-filter: blur(5px);
-        -o-filter: blur(5px);
-        -ms-filter: blur(5px);
-        filter: blur(5px);
-		transition: all 0.5s ease;
-		transform: scale(0.9);
-    }
-
-	
 }
-
-
 

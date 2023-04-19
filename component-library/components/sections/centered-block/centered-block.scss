@@ -9,15 +9,12 @@
 		padding-left: 16px;
 		padding-right: 16px;
 	}
-    
-
 
     &__content{
         max-width: 563px;
 		margin: 96px 0 48px 0;
         text-align: center;
         justify-content: center;
-        
     }
 
     &__heading{
@@ -26,10 +23,6 @@
         font-size: var(--text-4xl);
         font-weight: var(--font-semibold);
         line-height: 40px;
-
-
-
-
     }
 
     &__description{
@@ -38,7 +31,6 @@
         line-height: 30px;
         font-family: var(--font-sans-body);
         color: var(--text-stone);
-
     }
 
     &__image{

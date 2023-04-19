@@ -5,7 +5,6 @@
     background: var(--bg-white);
     position: relative;
 
-    //TODO: Remove this once text is formatted
     min-height: 500px;
     height: max-content;
     img{
@@ -18,11 +17,9 @@
         font-weight: 600;
         font-size: 28px;
         line-height: 35px;
-        // TODO: Add font-family variable
-        font-family: Barlow,Verdana,sans-serif;
+        font-family: var(--font-sans-heading);
         margin-top: 0;
         margin-bottom: 32px;
-        
     }
 
     p{
@@ -31,10 +28,8 @@
         line-height: 24px;
         color: #3B3B3D;
         margin-bottom: 32px;
-        // TODO: Add font-family variable
-        font-family: Barlow,Verdana,sans-serif;
-       
-        
+        font-family: var(--font-sans-body);
+ 
     }
     .c-generic-link{
         position: relative;

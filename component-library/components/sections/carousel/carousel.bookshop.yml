@@ -13,7 +13,7 @@ blueprint:
   heading: ""
   text_content: ""
   slides: [bookshop:simple/slide-card]
-  background_color: "#FFFFFF"
+  background_color: "#F8F9FA"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -23,8 +23,8 @@ preview:
     - bookshop:simple/slide-card
     - bookshop:simple/slide-card
     - bookshop:simple/slide-card
-    - bookshop:simple/slide-card
-    - bookshop:simple/slide-card
+    # - bookshop:simple/slide-card
+    # - bookshop:simple/slide-card
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
@@ -33,4 +33,4 @@ _inputs:
     options:
       values:
         - "#F8F9FA"
-        - "#FFFFFF"
+        - "#F1F3F5"

@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: "Navigation-form"
-  description:
+  description: "A form with an email input, checkbox and a button."
   icon: contact_mail
   tags: []
 
