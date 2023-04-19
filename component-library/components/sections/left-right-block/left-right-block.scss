@@ -12,6 +12,10 @@
         grid-column: 8 / 14;
         padding-left: 64px;
         padding-right: 96px;
+
+        @media screen and (min-width: 766px) and (max-width: 1079px){
+            padding: 0px 46px;
+        }
     }
 
     &__left, &__right {
