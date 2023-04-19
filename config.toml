@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'PaperCut Grows'
+title = 'Forest Positive'
 
 [module]
 replacements = "components.local -> ../component-library"
