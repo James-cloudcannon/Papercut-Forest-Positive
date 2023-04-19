@@ -1,28 +1,27 @@
 ---
 title: Home
 content_blocks:
-    - _bookshop_name: sections/banner
+    - _bookshop_name: sections/hero-banner
       title: "forest positive printing"
       heading: "Reduce waste + Plant more = <strong>Forest Positive</strong>"
       paragraph: "Transform your printing from an environmental impact to a positive force for ecological renewal."
       image:
-          path: "https://picsum.photos/529/295"
+          path: images/forest--bike.svg
           alt: "Forest Positive Printing"
       image_alignment: "right"  
     - _bookshop_name: sections/centered-block
       heading: "What is Forest Positive"
       description: "What is Forest Positive printing? An evolution of the print space, putting but back more trees than get pulped into printer paper. Doing what’s right for the environment."
-      background_color: "#F8F9FA"
-      image:
-        path: "https://picsum.photos/571/138"
-        alt: "Forest Positive"
       background_color: "#F1F3F5"
+      image:
+        path: images/forest-lower.svg
+        alt: "Forest Positive"
     - _bookshop_name: sections/left-right-block
       heading: 
         _bookshop_name: generic/heading
         heading_text: "Why Forest Positive matters"
-        heading_hierarchy: "h2"
-        heading_style: "h2"
+        heading_hierarchy: "h3"
+        heading_style: "h3"
       description: >-
         20% of current greenhouse gases are due to tropical forest destruction. The soldiers on the frontlines of the climate change war are the world’s trees. One mature tree absorbs more than 48 pounds of carbon dioxide each year. This creates enough oxygen for a human to breath for 2 years.
 
@@ -32,10 +31,10 @@ content_blocks:
 
         With 30% trees cut down being used for paper processing, essential business printing needs to do more   than minimize paper waste. We need to maximize positive environmental investment.
       image: 
-        path: "https://picsum.photos/551/281"
+        path: images/watering-ground.png
         alt: "Forest Positive"
       image_alignment: "left"
-      background_color: "#F8F9FA"
+      background_color: "#FFFFFF"
     - _bookshop_name: sections/left-right-quote-block
       quote: "“What we are doing to the forests of the world is but a mirror reflection of what we are doing to ourselves and to one another.” "
       author: "Chris Maser"
@@ -43,8 +42,8 @@ content_blocks:
       heading: 
         _bookshop_name: generic/heading
         heading_text: "We plant trees to counteract your printing's impact"
-        heading_hierarchy: "h2"
-        heading_style: "h2"
+        heading_hierarchy: "h4"
+        heading_style: "h4"
       body_text: >-
           **Forest Positive printing** is extending the Forest Positive evolution into the print space. It allows organisations to actively contribute to more trees being planted than those pulped into printing paper. Forest Positive printing moves beyond reducing waste and transforms essential business printing from a negative environmental footprint to a positive force for reforestation and ecological renewal.
       background_color: "#F1F3F5"
@@ -54,8 +53,8 @@ content_blocks:
       heading: 
         _bookshop_name: generic/heading
         heading_text: "History of sustainability at PaperCut"
-        heading_hierarchy: "h2"
-        heading_style: "h2"
+        heading_hierarchy: "h4"
+        heading_style: "h4"
       description: >-
         Caring about the environment isn’t new at PaperCut, it’s embedded in our DNA. This company all started with an overflowing recycling bin at a school library printer. It was the motivation to write a bit of code to reduce waste for one school, and it quickly became a globally used software.
         
@@ -65,10 +64,10 @@ content_blocks:
         
         But minimizing waste is no longer enough, we want to do more. We’re now solving the second half of the print equation. Forest Positive printing means we offer waste reduction and direct ecological action by offering customers a way to plant more trees than used by printing.
       image:
-         path: "https://picsum.photos/551/281"
+         path: images/papercutter-body-chris-dance-fa01-1.svg
          alt: "Forest Positive"
       image_alignment: "left"
-      background_color: "#F8F9FA"
+      background_color: "#FFFFFF"
     - _bookshop_name: sections/left-right-featured-cta
       heading: "PaperCut Grows"
       call_to_action:
@@ -85,67 +84,73 @@ content_blocks:
       link:
           content: "Learn more about papercut grows"
           url: "#"
-      logo_image_path: "https://picsum.photos/270/81"
+      logo_image_path: images/PaperCut-Grows-Logo.svg
       logo_image_alt_tag: "PaperCut Grows Logo"
       cta_alignment: "right"
       background_video: 
         _bookshop_name: simple/background-video
-        video_id: ''
-        fall_back_image: "https://picsum.photos/500"
+        video_id: 
+        fall_back_image: images/fall-back-image.png
+      background_color: "#ffffff"
     - _bookshop_name: sections/carousel
       heading: "Sustainability in the print industry is bigger than us"
       text_content: "We highly recommend you familiarize yourself with the following incredible organizations ensuring a better tomorrow for our planet:"
       slides:
         - _bookshop_name: simple/slide-card
-          primary_image: "https://picsum.photos/500"
-          title: "HP carbon neutral offering"
-          body_text: "HP's Sustainable Impact creates lasting, positive change for the planet, our people, and the communities where we live, work, and do business."
-          url: "#"
-          logo: "https://picsum.photos/500"
+          primary_image: images/hp-main.png
+          title: "HP"
+          body_text: "announced targets for reducing carbon emissions and climate partnerships to work on ocean conservation and forest restoration"
+          url: https://press.hp.com/us/en/press-releases/2021/hp-inc-announces-ambitious-climate-action-goals.html
+          logo: images/hp-icon.svg
         - _bookshop_name: simple/slide-card
-          primary_image: "https://picsum.photos/500"
-          logo: "https://picsum.photos/500"
-          title: "PrintReleaf’s tree planting"
-          body_text: "PrintReleaf is a Certification System and Software Platform for Automated Global Reforestation."
-          url: "#"
+          title: "Konica Minolta"
+          primary_image: images/konica.png
+          logo: images/konica-icon.svg
+          body_text: "Enabling carbon neutrality programn"
+          url: "https://www.konicaminolta.eu/eu-en/services/get-to-know-your-device/enabling-carbon-neutrality"
         - _bookshop_name: simple/slide-card
-          primary_image: "https://picsum.photos/500"
-          logo: "https://picsum.photos/500"
-          title: "Konica Minolta's program"
-          body_text: "Konica Minolta carries out activities to reduce environmental impact as part of its efforts to achieve “Carbon Minus” by 2050."
-          url: "#"
+          title: "Ricoh"
+          primary_image: images/ricoh.png
+          logo: images/ricoh-icon.png
+          body_text: "A non-profit organization that works to conserve biodiversity and ensure sustainable livelihoods by transforming land-use practices, business practices and consumer behavior"
+          url: "https://www.rainforest-alliance.org/"
         - _bookshop_name: simple/slide-card
-          primary_image: "https://picsum.photos/500"
-          logo: "https://picsum.photos/500"
-          title: "The Nature Conservancy"
-          body_text: "The Nature Conservancy is a global conservation organization. They work to protect the lands and waters on which all life depends. They have a goal to protect 30% of the planet by 2030."
-          url: "#"
+          title: "Forest Stewardship Council (FSC)"
+          primary_image: images/fsc.png
+          logo: 
+          body_text: "Promoting environmentally appropriate, socially beneficial and economically viable forest management"
+          url: "https://anz.fsc.org/"
         - _bookshop_name: simple/slide-card
-          primary_image: "https://picsum.photos/500"
-          logo: "https://picsum.photos/500"
-          title: "The World Bank"
-          body_text: "The World Bank is a global development cooperative owned by 189 member countries. They work to reduce poverty and improve living standards for people in developing countries."
-          url: "#"
-          
-
-        
-
+          title: "Environmental Paper Network"
+          primary_image: images/evp.png
+          logo: 
+          body_text: "A worldwide network of over 150 organizations commited to pulp and paper industry sustainability"
+          url: "https://environmentalpaper.org/"
+        - _bookshop_name: simple/slide-card
+          title: "PrintReleaf"
+          primary_image: images/print-releaf.png
+          logo: 
+          body_text: "A certification system and software platform for automated global reforestation"
+          url: "https://printreleaf.com/"
     - _bookshop_name: sections/left-right-with-list
-      image_path: https://picsum.photos/437/437
+      image_path: images/papercutter-body-chris-goult-fa01-1-1.svg
       heading: 
         _bookshop_name: generic/heading
         heading_text: "Find out more about what's driving the Forest Positive movement"
-        heading_hierarchy: "h2"
-        heading_style: "h2"
+        heading_hierarchy: "h4"
+        heading_style: "h4"
       body_text: >-
           Forest Positive is a global movement, and a targeted extension of sustainability. We’re just doing our bit to bring it to printing. 
 
 
           The Forest Positive movement is bigger than us. Want to learn more about it? Look at these other initiatives in the space:
       links:
-          - content_html: "WWF - Responsible pulp and paper policies and targets with paper manufacturers - also check out their post on Creating a Forest Positive Future"
-          - content_html: "IKEA - Forest Positive wood sourcing for the furniture industry "
-          - content_html: "United Nations - The Global Forest Goals Report 2021 outlines the importance of the worlds forests in achieving a sustainable tomorrow"
+          - content_html: >-
+              <a href="https://www.worldwildlife.org/">WWF</a> - Responsible pulp and paper policies and targets with paper manufacturers - also check out their post on <a href="https://www.worldwildlife.org/blogs/sustainability-works/posts/creating-a-forest-positive-future">Creating a Forest Positive Future</a>
+          - content_html: >-
+              <a href="https://www.ikea.com/">IKEA</a> - Forest Positive wood sourcing for the furniture industry
+          - content_html: >-
+              <a href="https://www.un.org/en/">United Nations</a> - The Global Forest Goals Report 2021 outlines the importance of the worlds forests in achieving a sustainable tomorrow
       background_color: "#F1F3F5"
       list_alignment: "right"
     - _bookshop_name: sections/footer-cta
