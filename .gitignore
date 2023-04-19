@@ -1,1 +1,6 @@
-node_modules
+/node_modules
+/public/
+/resources/_gen/
+/assets/js/build.js
+.env
+.DS_Store
