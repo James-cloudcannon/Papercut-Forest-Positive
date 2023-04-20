@@ -10,7 +10,7 @@ content_blocks:
     image:
       path: images/forest--bike.svg
       alt: Forest Positive Printing
-    image_alignment: left
+    image_alignment: right
   - _bookshop_name: sections/centered-block
     heading: What is Forest Positive
     description: >-
@@ -44,7 +44,7 @@ content_blocks:
     image:
       path: images/watering-ground.png
       alt: Forest Positive
-    image_alignment: right
+    image_alignment: left
     background_color: '#ffffff'
   - _bookshop_name: sections/left-right-quote-block
     quote: >-
@@ -94,7 +94,7 @@ content_blocks:
     image:
       path: images/papercutter-body-chris-dance-fa01-1.svg
       alt: Forest Positive
-    image_alignment: right
+    image_alignment: left
     background_color: '#ffffff'
   - _bookshop_name: sections/left-right-featured-cta
     heading: PaperCut Grows
@@ -122,7 +122,7 @@ content_blocks:
       url: '#'
     logo_image_path: images/PaperCut-Grows-Logo.svg
     logo_image_alt_tag: PaperCut Grows Logo
-    cta_alignment: left
+    cta_alignment: right
     background_video:
       _bookshop_name: simple/background-video
       video_id:
@@ -211,7 +211,7 @@ content_blocks:
           <a href="https://www.un.org/en/">United Nations</a> - The Global
           Forest Goals Report 2021 outlines the importance of the worlds forests
           in achieving a sustainable tomorrow
-    background_color: '#F1F3F5'
+    background_color: '#f1f3f5'
     list_alignment: right
   - _bookshop_name: sections/footer-cta
     heading: Ready to get started?
