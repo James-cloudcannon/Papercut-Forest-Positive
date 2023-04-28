@@ -13,6 +13,47 @@ collections_config:
     _enabled_editors:
       - visual
       - content
+  _inputs:
+    image_alignment:
+      type: select
+      options:
+        values:
+          - left
+          - right
+      
+    quote_alignment: 
+      type: select
+      options:
+        values:
+          - left
+          - right
+    cta_alignment:
+      type: select
+      options:
+        values:
+          - left
+          - right
+    list_alignment:
+      type: select
+      options:
+        values:
+          - left
+          - right
+  _select_data:
+    image_alignment:
+      - left
+      - right
+    quote_alignment:
+      - left
+      - right
+    cta_alignment:
+      - left
+      - right
+    list_alignment:
+      - left
+      - right
+
+
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
