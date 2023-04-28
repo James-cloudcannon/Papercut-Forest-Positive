@@ -34,5 +34,6 @@ _inputs:
   image_alignment:
     type: select
     options:
-      - "left"
-      - "right"
+      values:
+        - left
+        - right
