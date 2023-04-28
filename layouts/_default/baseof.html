@@ -3,13 +3,13 @@
     {{- partial "head/head.html" . -}}
     <body>
             <header>
-                {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
+                {{/*  {{ partial "bookshop_bindings" `(dict "live_render" false)` }}  */}}
             </header>
             <main id="documentBody">
 
                 <!-- Render any additional page content below the page's content blocks -->
                 {{ block "main" . }}{{ end }}
             </main>
-            {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
+            {{/*  {{ partial "bookshop_bindings" `(dict "live_render" false)` }}  */}}
     </body>
 </html>
